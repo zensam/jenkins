@@ -1,13 +1,10 @@
 FROM jenkins
-LABEL version="1.0.a"
-MAINTAINER Sergii Marynenko <marynenko@gmail.com>
 
 # ENV TERM=xterm JENHOME=/var/jenkins_home JENREF=/usr/share/jenkins/ref
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
 USER root
 RUN apt-get update && \
-    apt-get -y upgrade && \
-    apt-get install -y htop mc net-tools sudo && \
+    apt-get install -y dnsutils sudo && \
     echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers && \
     rm -rf /var/lib/apt/lists/*
 
@@ -16,7 +13,6 @@ RUN apt-get update && \
 ############################################
 # Switch to user jenkins
 USER jenkins
-
 # Jenkins settings
 # COPY config/*.xml ${JENREF}/
 
