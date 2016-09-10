@@ -1,11 +1,14 @@
 ansicolor
 authentication-tokens
 build-timeout
+checkstyle
 clone-workspace-scm
 cloudbees-credentials
 cloudbees-folder
+cloverphp
 config-file-provider
 console-column-plugin
+crap4j
 credentials
 credentials-binding
 cron_column
@@ -17,6 +20,7 @@ docker-build-publish
 docker-build-step
 docker-commons
 doclinks
+dry
 durable-task
 extensible-choice-parameter
 git-client
@@ -28,8 +32,10 @@ gitlab-logo
 gitlab-plugin
 greenballs
 groovy
+htmlpublisher
 http-post
 icon-shim
+jdepend
 jquery
 job-dsl
 jobConfigHistory
@@ -37,7 +43,9 @@ junit
 nodelabelparameter
 parameterized-trigger
 plain-credentials
+plot
 plugin-usage-plugin
+pmd
 progress-bar-column-plugin
 project-build-times
 rebuild
@@ -50,6 +58,8 @@ ssh2easy
 thinBackup
 timestamper
 token-macro
+violations
+warnings
 ws-cleanup
 xunit
 xvfb
