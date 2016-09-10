@@ -1,4 +1,4 @@
-### jenkins in docker for Max
+### jenkins in docker
 
 #### Pull image
 ```bash
