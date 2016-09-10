@@ -42,6 +42,7 @@ jobConfigHistory
 junit
 nodelabelparameter
 parameterized-trigger
+phing
 plain-credentials
 plot
 plugin-usage-plugin
