@@ -40,6 +40,8 @@ jquery
 job-dsl
 jobConfigHistory
 junit
+kubernetes
+kubernetes-ci
 nodelabelparameter
 parameterized-trigger
 phing
@@ -55,6 +57,8 @@ saferestart
 scm-api
 slave-setup
 sonar
+ssh
+ssh-slaves
 ssh2easy
 thinBackup
 timestamper
