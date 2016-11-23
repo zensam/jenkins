@@ -65,6 +65,7 @@ timestamper
 token-macro
 violations
 warnings
+workflow-aggregator
 ws-cleanup
 xunit
 xvfb
