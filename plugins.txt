@@ -1,4 +1,6 @@
-credentials
+analysis-core
+cppcheck
+cmakebuilder
 custom-view-tabs
 dashboard-view
 disk-usage
@@ -13,6 +15,7 @@ maven-plugin
 plugin-usage-plugin
 saferestart
 scm-api
+sbt
 slave-setup
 sonar
 ssh
@@ -21,7 +24,9 @@ ssh-slaves
 structs
 thinBackup
 timestamper
+warnings
 workflow-aggregator
 workflow-basic-steps
 workflow-scm-step
 ws-cleanup
+xunit

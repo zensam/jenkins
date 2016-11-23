@@ -1,4 +1,4 @@
-### jenkins in docker
+### jenkins of 1.6XX version in docker
 
 #### Pull image
 ```bash
