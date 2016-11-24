@@ -9,6 +9,7 @@ git-client
 greenballs
 instant-messaging
 javadoc
+jenkins-multijob-plugin
 jquery
 jobConfigHistory
 junit
@@ -27,6 +28,7 @@ ssh
 ssh-credentials
 ssh-slaves
 structs
+subversion
 thinBackup
 timestamper
 warnings
