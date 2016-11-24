@@ -7,6 +7,7 @@ display-url-api
 git
 git-client
 greenballs
+instant-messaging
 javadoc
 jquery
 jobConfigHistory
@@ -19,6 +20,7 @@ saferestart
 scm-api
 script-security
 sbt
+slack
 slave-setup
 sonar
 ssh
