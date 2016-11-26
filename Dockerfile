@@ -4,16 +4,16 @@ FROM jenkins:1.651.3
 # ENV TERM=xterm JENHOME=/var/jenkins_home JENREF=/usr/share/jenkins/ref
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
 USER root
-RUN apt-get update && \
-    apt-get install -y \
-    && build-essential \
+RUN apt-get update \
+    && apt-get install -y \
+    # && build-essential \
     && dnsutils \
     && libssl-dev \
     $$ openssl \
     && sudo \
     && echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers \
     && rm -rf /var/lib/apt/lists/*
-
+RUN apt-get install -y build-essential
 ############################################
 # Configure Jenkins
 ############################################
