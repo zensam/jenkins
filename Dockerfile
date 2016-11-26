@@ -5,7 +5,7 @@ FROM jenkins
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
 USER root
 RUN apt-get update && \
-    apt-get install -y dnsutils sudo && \
+    apt-get install -y sudo && \
     echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers && \
     rm -rf /var/lib/apt/lists/*
 
