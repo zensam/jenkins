@@ -6,10 +6,11 @@ ENV TERM=xterm JENREF=/usr/share/jenkins/ref
 USER root
 RUN apt-get update \
     && apt-get install -y \
-    && build-essential \
-    && libssl-dev \
-    $$ openssl \
-    && sudo \
+    dnsutils \
+    build-essential \
+    libssl-dev \
+    openssl \
+    sudo \
     && echo "jenkins ALL=NOPASSWD: ALL" >> /etc/sudoers \
     && rm -rf /var/lib/apt/lists/*
 
