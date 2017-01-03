@@ -1,7 +1,11 @@
+ace-editor
 analysis-core
+ansible
+authentication-tokens
 cppcheck
 cmakebuilder
 config-file-provider
+credentials
 dashboard-view
 disk-usage
 display-url-api
@@ -11,6 +15,7 @@ docker-workflow
 git
 git-client
 greenballs
+icon-shim
 instant-messaging
 javadoc
 jenkins-multijob-plugin
@@ -21,6 +26,7 @@ mailer
 matrix-project
 maven-plugin
 plugin-usage-plugin
+resource-disposer
 saferestart
 scm-api
 script-security
