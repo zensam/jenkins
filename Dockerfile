@@ -21,4 +21,6 @@ USER jenkins
 COPY plugins.txt ${JENKINS_HOME}/plugins.txt
 # RUN /usr/local/bin/plugins.sh ${JENKINS_HOME}/plugins.txt
 # RUN /usr/local/bin/install-plugins.sh "$(< ${JENKINS_HOME}/plugins.txt)"
-RUN /usr/local/bin/install-plugins.sh "$(< plugins.txt)"
+RUN /usr/local/bin/install-plugins.sh \
+    ansible \
+    workflow-aggregator
