@@ -20,8 +20,26 @@ USER jenkins
 # Define plugin set and run it's installation
 COPY plugins.txt ${JENKINS_HOME}/plugins.txt
 # RUN /usr/local/bin/plugins.sh ${JENKINS_HOME}/plugins.txt
-RUN /usr/local/bin/install-plugins.sh $(< ${JENKINS_HOME}/plugins.txt)
 # RUN /usr/local/bin/install-plugins.sh "$(< ${JENKINS_HOME}/plugins.txt)"
-# RUN /usr/local/bin/install-plugins.sh \
-#     ansible \
-#     workflow-aggregator
+RUN /usr/local/bin/install-plugins.sh \
+    ansible \
+    cmakebuilder \
+    config-file-provider \
+    credentials \
+    dashboard-view \
+    disk-usage \
+    docker-commons \
+    docker-plugin \
+    docker-workflow \
+    git \
+    git-client \
+    greenballs \
+    jenkins-multijob-plugin \
+    plugin-usage-plugin \
+    saferestart \
+    sonar \
+    ssh \
+    ssh-credentials \
+    ssh-slaves \
+    workflow-aggregator \
+    ws-cleanup
