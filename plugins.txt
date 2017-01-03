@@ -1,9 +1,13 @@
 analysis-core
 cppcheck
 cmakebuilder
+config-file-provider
 dashboard-view
 disk-usage
 display-url-api
+docker-commons
+docker-plugin
+docker-workflow
 git
 git-client
 greenballs
