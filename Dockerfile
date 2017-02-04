@@ -1,5 +1,5 @@
-FROM jenkins
-# FROM jenkins:2.32.1
+# FROM jenkins
+FROM jenkins:2.32.2
 
 # ENV TERM=xterm JENHOME=/var/jenkins_home JENREF=/usr/share/jenkins/ref
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
@@ -21,10 +21,10 @@ USER jenkins
 # COPY plugins.txt ${JENKINS_HOME}/plugins.txt
 # RUN /usr/local/bin/plugins.sh ${JENKINS_HOME}/plugins.txt
 # RUN /usr/local/bin/install-plugins.sh "$(< ${JENKINS_HOME}/plugins.txt)"
-# RUN /usr/local/bin/install-plugins.sh \
-#     ansible \
-#     cmakebuilder \
-#     config-file-provider \
+RUN /usr/local/bin/install-plugins.sh \
+    ansible \
+    cmakebuilder \
+    config-file-provider \
 #     credentials \
 #     dashboard-view \
 #     disk-usage \
@@ -42,4 +42,4 @@ USER jenkins
 #     ssh-credentials \
 #     ssh-slaves \
 #     workflow-aggregator \
-#     ws-cleanup
+    ws-cleanup
