@@ -23,23 +23,26 @@ USER jenkins
 # RUN /usr/local/bin/install-plugins.sh "$(< ${JENKINS_HOME}/plugins.txt)"
 RUN /usr/local/bin/install-plugins.sh \
     ansible \
+    cloudbees-folder \
     cmakebuilder \
     config-file-provider \
 #     credentials \
-#     dashboard-view \
-#     disk-usage \
+    dashboard-view \
+    disk-usage \
 #     docker-commons \
 #     docker-plugin \
 #     docker-workflow \
+    ec2 \
 #     git \
 #     git-client \
-#     greenballs \
+    greenballs \
 #     jenkins-multijob-plugin \
-#     plugin-usage-plugin \
-#     saferestart \
-#     sonar \
-#     ssh \
+    plugin-usage-plugin \
+    saferestart \
+    sonar \
+    ssh-agent \
+    thinBackup \
 #     ssh-credentials \
 #     ssh-slaves \
-#     workflow-aggregator \
+    workflow-aggregator \
     ws-cleanup
