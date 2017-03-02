@@ -1,5 +1,5 @@
 # FROM jenkins
-FROM jenkins:2.32.2
+FROM jenkins:2.32.3
 
 # ENV TERM=xterm JENHOME=/var/jenkins_home JENREF=/usr/share/jenkins/ref
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
