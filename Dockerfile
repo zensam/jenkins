@@ -30,7 +30,7 @@ RUN /usr/local/bin/install-plugins.sh \
     disk-usage \
 #     docker-commons \
 #     docker-plugin \
-#     docker-workflow \
+    docker-workflow:1.9.1 \
     ec2 \
 #     git \
 #     git-client \
