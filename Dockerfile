@@ -1,5 +1,5 @@
 # FROM jenkins
-FROM jenkins:2.32.3
+FROM jenkins:2.32.2
 
 # ENV TERM=xterm JENHOME=/var/jenkins_home JENREF=/usr/share/jenkins/ref
 ENV TERM=xterm JENREF=/usr/share/jenkins/ref
@@ -25,14 +25,14 @@ RUN /usr/local/bin/install-plugins.sh \
     cloudbees-folder \
     cmakebuilder \
     config-file-provider \
-#     credentials \
+    credentials \
     dashboard-view \
     disk-usage \
 #     docker-commons \
 #     docker-plugin \
     docker-workflow:1.9.1 \
     ec2 \
-#     git \
+    git \
 #     git-client \
     greenballs \
 #     jenkins-multijob-plugin \
@@ -42,6 +42,7 @@ RUN /usr/local/bin/install-plugins.sh \
     ssh-agent \
     thinBackup \
 #     ssh-credentials \
-#     ssh-slaves \
+    ssh-slaves \
+    timestamper \
     workflow-aggregator \
     ws-cleanup
