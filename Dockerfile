@@ -33,7 +33,7 @@ RUN /usr/local/bin/install-plugins.sh \
     docker-workflow:1.9.1 \
     ec2 \
     git \
-#     git-client \
+    git-client \
     greenballs \
 #     jenkins-multijob-plugin \
     plugin-usage-plugin \
